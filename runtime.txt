@@ -1,1 +1,2 @@
 python-3.6.2
+gunicorn==18.0.0
