@@ -8,13 +8,16 @@
     <style type="text/css">
         body{
             background-image: linear-gradient(to right, yellow , white);
-            margin-top: 200px; 
+            margin-top: 200px;
+            background-attachment: fixed;
+
         }
         table{
             margin: 50px;
             font-family: Rubik;
             font-size: 20px;
         }
+    
     </style>
 </head>
 <body>
@@ -28,14 +31,17 @@
             </div>
             <div class="row">
                 <center>
-                <table border="1" cellpadding="20px" cellspacing="10px;">
+                <div class="table-responsive"></div>
+                <table border="1" class="table" cellpadding="20px" cellspacing="10px;">
+                    
                        <tr>
                 {% for e in list_of_elements %}
                    
                            <th>{{ e[3] }}<br> {{ e[0] }}<br> {{ e[1] }}</th>
                    
                 {% endfor %}
-                    </tr>
+                        </tr>
+                  
                 </table>
                 </center>
             </div>
